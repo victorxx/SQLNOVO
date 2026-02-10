@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT exists ALUNOS(
+ID_ALUNO INT,
+NOME VARCHAR(100),
+CURSO VARCHAR(100)
+);
+select nome from alunos
+where curso='computacao'
+union all
+select nome from alunos
+where curso ='engenharia';
